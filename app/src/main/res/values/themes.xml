@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FishyTalk" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="rounded_corners_of_img">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">200dp</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="Theme.FishyTalk" parent="Base.Theme.FishyTalk" />
+</resources>

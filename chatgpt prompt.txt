@@ -1,0 +1,3 @@
+﻿chatgpt (fishyTalk) prompt :
+
+i have a chat app which people can chat with each other for that i used google firebase for realtime database and for authentication. in realtime database , I have a user parent inside which user details in been added. Similarily , i have chat parrent in which chats of two individual persons text messages as been added.  Now , i need to create a new parrent called "Profile_Picture" in which i can add user image as data to database. Now , you tell me who to build a data class for only profile picture ? , and what data type it should be ? ,and  how code it in kotlin so that it reflects on app and in database?

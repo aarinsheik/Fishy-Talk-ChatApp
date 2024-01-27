@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "139813122061",
+    "project_id": "fishytalk-a2cb9",
+    "storage_bucket": "fishytalk-a2cb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139813122061:android:d8681845e8f39f05372544",
+        "android_client_info": {
+          "package_name": "com.example.fishytalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmvGOe0cmkgo-WkZxFKa60olCP1h61yLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

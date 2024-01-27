@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:background="@drawable/rounded_corner">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="58sp"
+        android:layout_height="58sp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:alpha="0.9"
+        android:background="@drawable/rounded_image"
+        android:padding="4sp"
+        android:src="@drawable/person_icon" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="29sp"
+            android:layout_marginBottom="-10sp"
+            android:textColor="#063708"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Aarin Sheik" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="-2sp"
+            android:textColor="#063708"
+            android:fontFamily="@font/poppins_regular"
+            android:text="aarinsheik@gmail.com" />
+
+    </LinearLayout>
+
+</RelativeLayout>

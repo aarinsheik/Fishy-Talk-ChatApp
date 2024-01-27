@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fontFamily="@font/pridiregular"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".login">
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/v1"
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingRight="30sp"
+        >
+
+        <ImageView
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:background="@drawable/fishlogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="30sp"
+            android:letterSpacing="0.1"
+            android:text="Fishy\nTalk"
+            android:fontFamily="@font/toucon"
+            android:textColor="#E1050505"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/l1"
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#AE000000"
+                android:fontFamily="@font/pridimedium"
+                android:textSize="40sp"
+                android:layout_marginLeft="30sp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access to your \naccount"
+                android:textColor="#AE000000"
+                android:lineSpacingExtra="-10dp"
+                android:fontFamily="@font/pridiregular"
+                android:textSize="20sp"
+                android:layout_marginLeft="30sp"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="250sp"
+            android:layout_height="150sp"
+            android:forceHasOverlappingRendering="true"
+            android:background="@drawable/robo_wave"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/email_id"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:textColor="#AE000000"
+        android:textColorHint="#6F000000"
+        android:gravity="center_vertical"
+        android:layout_height="56sp"
+        android:layout_below="@+id/l2"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/email_logo"
+        android:fontFamily="@font/pridiregular"
+        android:hint="  email" />
+
+    <EditText
+        android:id="@+id/password_id"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:layout_below="@+id/email_id"
+        android:textColor="#AE000000"
+        android:textColorHint="#6F000000"
+        android:layout_marginLeft="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/password_logo"
+        android:fontFamily="@font/pridiregular"
+        android:hint="  Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_but"
+        android:layout_below="@+id/password_id"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_button_style_lp"
+        android:layout_height="50sp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="30sp"
+        android:text="Login"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+
+    <TextView
+        android:id="@+id/orlogin"
+        android:layout_below="@+id/login_but"
+        android:textSize="16sp"
+        android:layout_marginTop="20sp"
+        android:textColor="#AE000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="if you are a new user "/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_but"
+        android:layout_below="@+id/orlogin"
+        android:layout_width="match_parent"
+        android:background="@drawable/signup_button_style_lp"
+        android:layout_height="50sp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        android:text="sign UP"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+
+</RelativeLayout>

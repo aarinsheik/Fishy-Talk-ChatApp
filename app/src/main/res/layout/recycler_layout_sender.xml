@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/sender_msag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:maxWidth="270sp"
+        android:textSize="24sp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_background_sender_msg"
+        />
+
+    <TextView
+        android:id="@+id/sender_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="12:00 PM"
+        android:layout_marginRight="4sp"
+        android:layout_alignBottom="@+id/sender_msag"
+        android:layout_toLeftOf="@+id/sender_msag"/>
+
+</RelativeLayout>

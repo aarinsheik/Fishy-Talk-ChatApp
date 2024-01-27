@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_gradient_chatinterface"
+    tools:context=".chatInterface">
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:background="#FB9647"
+        android:gravity="start"
+        >
+
+        <ImageButton
+            android:id="@+id/back_arrow"
+            android:layout_width="40sp"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:background="#FB9647"
+            android:src="@drawable/back_arrow"/>
+
+        <ImageView
+            android:id="@+id/pro_img"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_toRightOf="@+id/back_arrow"
+            android:background="@drawable/custom_background_user_profile2"
+            android:layout_marginRight="15sp"
+            android:padding="5sp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person_icon" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="230sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pro_img"
+            android:lineHeight="30sp"
+            android:textSize="30sp"
+            android:textColor="#350404"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Aarin Sheik" />
+
+        <ImageButton
+            android:id="@+id/three_line_but"
+            android:layout_width="70sp"
+            android:layout_height="70dp"
+            android:src="@drawable/three_line_menu"
+            android:background="#FB9647"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1"
+        android:layout_above="@+id/msg">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="20sp"
+        android:background="@drawable/rounded_corner_chatinterface"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/msg_Box"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_weight="87"
+            android:hint="message"
+            android:gravity="end"
+            android:paddingTop="18sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_style_message_sender"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingRight="30sp"/>
+
+        <ImageButton
+            android:id="@+id/send_but"
+            android:layout_width="30dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="10sp"
+            android:background="#FB9647"
+            android:scaleType="fitCenter"
+            android:layout_weight="10"
+            android:src="@drawable/send_logo_blk"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
